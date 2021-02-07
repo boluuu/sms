@@ -1,0 +1,32 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-lg-7">
+        <div class="card">
+            <div class="card-header">
+                 <i class="fa fa-align-justify"></i> Teacher Information
+            </div>
+            <div class="card-body">
+                <tbody>
+                    <tr>
+                        <td>Staff Id: {{ single_teacher.staff_number }}</td>
+                        <br>
+                        <td>Last Name: {{ single_teacher.last_name }}</td>
+                        <br>
+                        <td>First Name: {{ single_teacher.first_name }}</td>
+                        <br>
+                        <td>Level: {{ single_teacher.levels }}</td>
+                        <br>
+                        <td>Class Held: {{ single_teacher.class_held }}</td>
+                        
+                    </tr>
+                </tbody>
+            </div>
+        </div>
+    </div>
+    
+{% endblock %}
+

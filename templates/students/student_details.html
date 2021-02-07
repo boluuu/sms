@@ -1,0 +1,29 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-lg-7">
+        <div class="card">
+            <div class="card-header">
+                 <i class="fa fa-align-justify"></i> Students Deatils
+            </div>
+            <div class="card-body">
+                <tbody>
+                    <tr>
+                        <td>Student Number: {{ single_student.student_number }}</td>
+                        <br>
+                        <td>Last Name: {{ single_student.last_name }}</td>
+                        <br>
+                        <td>first Name: {{ single_student.first_name }}</td>
+                        <br>
+                        <td>Class: {{ single_student.level }}</td>
+                    </tr>
+                </tbody>
+            </div>
+        </div>
+    </div>
+    
+{% endblock %}
+

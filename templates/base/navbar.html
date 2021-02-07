@@ -1,0 +1,29 @@
+{% load static %}
+<header class="app-header navbar">
+   
+    <h4>
+        Boluwatife Odedeyi
+    </h4>
+    </button>
+
+    
+    <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button"
+               aria-haspopup="true" aria-expanded="false">
+                <img src="{% static 'src/img/avatars/6.jpg' %}" class="img-avatar" alt="admin@bootstrapmaster.com">
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+
+                <div class="dropdown-header text-center">
+                    <strong>Settings</strong>
+                </div>
+                <a class="dropdown-item" href="{% url 'logout' %}"><i class="fa fa-lock"></i> Logout</a>
+            </div>
+        </li>
+    
+
+    {% block navbar %}
+    {% endblock %}
+
+</header>
