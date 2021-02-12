@@ -34,6 +34,21 @@
                     </li>
                 </ul>
             </li>
+            <li class="nav-item nav-dropdown">
+                <a class="nav-link nav-dropdown-toggle" href="#">
+                    <i class="nav-icon icon-user"></i> Students and Teacher</a>
+                <ul class="nav-dropdown-items">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'sandt_list' %}">
+                            <i class="nav-icon icon-puzzle"></i> Student and Teacher List</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'sandt_regi' %}">
+                            <i class="nav-icon icon-puzzle"></i> Create New Student and Teacher</a>
+                    </li>
+                </ul>
+            </li>
+           
            
         </ul>
     </nav>
